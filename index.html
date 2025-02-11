@@ -229,10 +229,22 @@
 
     const trainingOptions = {
       efdi_all: [
-        { id: "train_area_all", label: "Area", breadcrumb: "Overall > Training" }
+        { id: "train_area_all", label: "Area", breadcrumb: "Overall > Training" },
+        { id: "train_policy_all", label: "Policy", breadcrumb: "Overall > Training > Policy" },
+        { id: "train_policy_in_service", label: "In-service", breadcrumb: "Overall > Training > Policy > In-service" },
+        { id: "train_policy_mandatory", label: "Mandatory", breadcrumb: "Overall > Training > Policy > Mandatory" },
+        { id: "train_practice_all", label: "Practice", breadcrumb: "Overall > Training > Practice" },
+        { id: "train_practice_workshops", label: "Workshops", breadcrumb: "Overall > Training > Practice > Workshops" }
       ],
       efdi_non_system: [
-        { id: "train_area_non", label: "Area", breadcrumb: "Non-system > Training" }
+        { id: "train_area_non", label: "Area", breadcrumb: "Non-system > Training" },
+        { id: "train_policy_non", label: "Policy", breadcrumb: "Non-system > Training > Policy" },
+        { id: "train_policy_in_service_non", label: "In-service", breadcrumb: "Non-system > Training > Policy > In-service" },
+        { id: "train_policy_mandatory_non", label: "Mandatory", breadcrumb: "Non-system > Training > Policy > Mandatory" },
+        { id: "train_practice_non", label: "Practice", breadcrumb: "Non-system > Training > Practice" },
+        { id: "train_practice_workshops_non", label: "Workshops", breadcrumb: "Non-system > Training > Practice > Workshops" }
+      ],
+      // Other entries for efdi_policy, efdi_practice, etc., can follow the same pattern as above
     };
 
     function updateYear(index) {
